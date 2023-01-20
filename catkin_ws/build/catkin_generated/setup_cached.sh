@@ -12,5 +12,10 @@ export TURTLEBOT_STAGE_WORLD_FILE="/home/workspace/catkin_ws/src/turtlebot_simul
 export TURTLEBOT_STDR_MAP_FILE="/home/workspace/catkin_ws/src/turtlebot_simulator/turtlebot_stdr/maps/sparse_obstacles.yaml"
 
 # modified environment variables
+export CMAKE_PREFIX_PATH="/home/workspace/catkin_ws/devel:$CMAKE_PREFIX_PATH"
+export LD_LIBRARY_PATH="/home/workspace/catkin_ws/devel/lib:$LD_LIBRARY_PATH"
 export PKG_CONFIG_PATH="/home/workspace/catkin_ws/devel/lib/pkgconfig:$PKG_CONFIG_PATH"
 export PWD="/home/workspace/catkin_ws/build"
+export PYTHONPATH="/home/workspace/catkin_ws/devel/lib/python2.7/dist-packages:$PYTHONPATH"
+export ROSLISP_PACKAGE_DIRECTORIES="/home/workspace/catkin_ws/devel/share/common-lisp"
+export ROS_PACKAGE_PATH="/home/workspace/catkin_ws/src:$ROS_PACKAGE_PATH"

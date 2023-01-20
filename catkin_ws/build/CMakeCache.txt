@@ -251,7 +251,7 @@ RT_LIBRARY:FILEPATH=/usr/lib/x86_64-linux-gnu/librt.so
 SETUPTOOLS_DEB_LAYOUT:BOOL=ON
 
 //Name of the computer/site where compile is being run
-SITE:STRING=3d0493fa47bc
+SITE:STRING=26bdfd0103ef
 
 //LSB Distrib tag
 UBUNTU:BOOL=TRUE
@@ -279,6 +279,12 @@ actionlib_DIR:PATH=/opt/ros/kinetic/share/actionlib/cmake
 
 //The directory containing a CMake configuration file for actionlib_msgs.
 actionlib_msgs_DIR:PATH=/opt/ros/kinetic/share/actionlib_msgs/cmake
+
+//Value Computed by CMake
+add_markers_BINARY_DIR:STATIC=/home/workspace/catkin_ws/build/add_markers
+
+//Value Computed by CMake
+add_markers_SOURCE_DIR:STATIC=/home/workspace/catkin_ws/src/add_markers
 
 //The directory containing a CMake configuration file for bond.
 bond_DIR:PATH=/opt/ros/kinetic/share/bond/cmake
@@ -386,6 +392,15 @@ message_generation_DIR:PATH=/opt/ros/kinetic/share/message_generation/cmake
 //The directory containing a CMake configuration file for message_runtime.
 message_runtime_DIR:PATH=/opt/ros/kinetic/share/message_runtime/cmake
 
+//The directory containing a CMake configuration file for move_base_msgs.
+move_base_msgs_DIR:PATH=/opt/ros/kinetic/share/move_base_msgs/cmake
+
+//Value Computed by CMake
+my_robot_BINARY_DIR:STATIC=/home/workspace/catkin_ws/build/my_robot
+
+//Value Computed by CMake
+my_robot_SOURCE_DIR:STATIC=/home/workspace/catkin_ws/src/my_robot
+
 //The directory containing a CMake configuration file for nav_msgs.
 nav_msgs_DIR:PATH=/opt/ros/kinetic/share/nav_msgs/cmake
 
@@ -394,6 +409,12 @@ nodelet_DIR:PATH=/opt/ros/kinetic/share/nodelet/cmake
 
 //The directory containing a CMake configuration file for openslam_gmapping.
 openslam_gmapping_DIR:PATH=/opt/ros/kinetic/share/openslam_gmapping/cmake
+
+//Value Computed by CMake
+pick_objects_BINARY_DIR:STATIC=/home/workspace/catkin_ws/build/pick_objects
+
+//Value Computed by CMake
+pick_objects_SOURCE_DIR:STATIC=/home/workspace/catkin_ws/src/pick_objects
 
 //The directory containing a CMake configuration file for pluginlib.
 pluginlib_DIR:PATH=/opt/ros/kinetic/share/pluginlib/cmake
@@ -669,7 +690,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=18
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=21
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP
