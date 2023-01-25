@@ -621,19 +621,6 @@ roscpp_generate_messages_py/fast:
 .PHONY : roscpp_generate_messages_py/fast
 
 #=============================================================================
-# Target rules for targets named rosgraph_msgs_generate_messages_eus
-
-# Build rule for target.
-rosgraph_msgs_generate_messages_eus: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 rosgraph_msgs_generate_messages_eus
-.PHONY : rosgraph_msgs_generate_messages_eus
-
-# fast build rule for target.
-rosgraph_msgs_generate_messages_eus/fast:
-	$(MAKE) -f add_markers/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build.make add_markers/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build
-.PHONY : rosgraph_msgs_generate_messages_eus/fast
-
-#=============================================================================
 # Target rules for targets named geometry_msgs_generate_messages_eus
 
 # Build rule for target.
@@ -762,6 +749,45 @@ geometry_msgs_generate_messages_py: cmake_check_build_system
 geometry_msgs_generate_messages_py/fast:
 	$(MAKE) -f add_markers/CMakeFiles/geometry_msgs_generate_messages_py.dir/build.make add_markers/CMakeFiles/geometry_msgs_generate_messages_py.dir/build
 .PHONY : geometry_msgs_generate_messages_py/fast
+
+#=============================================================================
+# Target rules for targets named rosgraph_msgs_generate_messages_eus
+
+# Build rule for target.
+rosgraph_msgs_generate_messages_eus: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 rosgraph_msgs_generate_messages_eus
+.PHONY : rosgraph_msgs_generate_messages_eus
+
+# fast build rule for target.
+rosgraph_msgs_generate_messages_eus/fast:
+	$(MAKE) -f add_markers/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build.make add_markers/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build
+.PHONY : rosgraph_msgs_generate_messages_eus/fast
+
+#=============================================================================
+# Target rules for targets named add_markers
+
+# Build rule for target.
+add_markers: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 add_markers
+.PHONY : add_markers
+
+# fast build rule for target.
+add_markers/fast:
+	$(MAKE) -f add_markers/CMakeFiles/add_markers.dir/build.make add_markers/CMakeFiles/add_markers.dir/build
+.PHONY : add_markers/fast
+
+#=============================================================================
+# Target rules for targets named pick_objects
+
+# Build rule for target.
+pick_objects: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 pick_objects
+.PHONY : pick_objects
+
+# fast build rule for target.
+pick_objects/fast:
+	$(MAKE) -f pick_objects/CMakeFiles/pick_objects.dir/build.make pick_objects/CMakeFiles/pick_objects.dir/build
+.PHONY : pick_objects/fast
 
 #=============================================================================
 # Target rules for targets named actionlib_msgs_generate_messages_py
@@ -1955,7 +1981,6 @@ help:
 	@echo "... roscpp_generate_messages_nodejs"
 	@echo "... roscpp_generate_messages_lisp"
 	@echo "... roscpp_generate_messages_py"
-	@echo "... rosgraph_msgs_generate_messages_eus"
 	@echo "... geometry_msgs_generate_messages_eus"
 	@echo "... roscpp_generate_messages_cpp"
 	@echo "... visualization_msgs_generate_messages_nodejs"
@@ -1966,6 +1991,9 @@ help:
 	@echo "... visualization_msgs_generate_messages_py"
 	@echo "... geometry_msgs_generate_messages_nodejs"
 	@echo "... geometry_msgs_generate_messages_py"
+	@echo "... rosgraph_msgs_generate_messages_eus"
+	@echo "... add_markers"
+	@echo "... pick_objects"
 	@echo "... actionlib_msgs_generate_messages_py"
 	@echo "... actionlib_msgs_generate_messages_nodejs"
 	@echo "... actionlib_msgs_generate_messages_eus"

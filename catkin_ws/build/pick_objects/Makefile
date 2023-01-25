@@ -166,6 +166,21 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
+pick_objects/CMakeFiles/pick_objects.dir/rule:
+	cd /home/workspace/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 pick_objects/CMakeFiles/pick_objects.dir/rule
+.PHONY : pick_objects/CMakeFiles/pick_objects.dir/rule
+
+# Convenience name for target.
+pick_objects: pick_objects/CMakeFiles/pick_objects.dir/rule
+
+.PHONY : pick_objects
+
+# fast build rule for target.
+pick_objects/fast:
+	cd /home/workspace/catkin_ws/build && $(MAKE) -f pick_objects/CMakeFiles/pick_objects.dir/build.make pick_objects/CMakeFiles/pick_objects.dir/build
+.PHONY : pick_objects/fast
+
+# Convenience name for target.
 pick_objects/CMakeFiles/actionlib_msgs_generate_messages_py.dir/rule:
 	cd /home/workspace/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 pick_objects/CMakeFiles/actionlib_msgs_generate_messages_py.dir/rule
 .PHONY : pick_objects/CMakeFiles/actionlib_msgs_generate_messages_py.dir/rule
@@ -390,6 +405,33 @@ actionlib_msgs_generate_messages_cpp/fast:
 	cd /home/workspace/catkin_ws/build && $(MAKE) -f pick_objects/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/build.make pick_objects/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/build
 .PHONY : actionlib_msgs_generate_messages_cpp/fast
 
+src/pick_objects.o: src/pick_objects.cpp.o
+
+.PHONY : src/pick_objects.o
+
+# target to build an object file
+src/pick_objects.cpp.o:
+	cd /home/workspace/catkin_ws/build && $(MAKE) -f pick_objects/CMakeFiles/pick_objects.dir/build.make pick_objects/CMakeFiles/pick_objects.dir/src/pick_objects.cpp.o
+.PHONY : src/pick_objects.cpp.o
+
+src/pick_objects.i: src/pick_objects.cpp.i
+
+.PHONY : src/pick_objects.i
+
+# target to preprocess a source file
+src/pick_objects.cpp.i:
+	cd /home/workspace/catkin_ws/build && $(MAKE) -f pick_objects/CMakeFiles/pick_objects.dir/build.make pick_objects/CMakeFiles/pick_objects.dir/src/pick_objects.cpp.i
+.PHONY : src/pick_objects.cpp.i
+
+src/pick_objects.s: src/pick_objects.cpp.s
+
+.PHONY : src/pick_objects.s
+
+# target to generate assembly for a file
+src/pick_objects.cpp.s:
+	cd /home/workspace/catkin_ws/build && $(MAKE) -f pick_objects/CMakeFiles/pick_objects.dir/build.make pick_objects/CMakeFiles/pick_objects.dir/src/pick_objects.cpp.s
+.PHONY : src/pick_objects.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -401,6 +443,7 @@ help:
 	@echo "... install/local"
 	@echo "... list_install_components"
 	@echo "... install/strip"
+	@echo "... pick_objects"
 	@echo "... actionlib_msgs_generate_messages_py"
 	@echo "... actionlib_msgs_generate_messages_nodejs"
 	@echo "... actionlib_msgs_generate_messages_eus"
@@ -418,6 +461,9 @@ help:
 	@echo "... move_base_msgs_generate_messages_lisp"
 	@echo "... actionlib_generate_messages_nodejs"
 	@echo "... actionlib_msgs_generate_messages_cpp"
+	@echo "... src/pick_objects.o"
+	@echo "... src/pick_objects.i"
+	@echo "... src/pick_objects.s"
 .PHONY : help
 
 
