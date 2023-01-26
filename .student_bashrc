@@ -1,3 +1,4 @@
 export PATH=/usr/bin:$PATH
 source /opt/ros/kinetic/setup.bash
 source /home/workspace/catkin_ws/devel/setup.bash
+cd /home/workspace
